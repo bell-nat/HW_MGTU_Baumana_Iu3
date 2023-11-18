@@ -10,6 +10,11 @@ public class Handler : BaseHandler
         Console.WriteLine("Введите число для поиска");
         int search = int.Parse(Console.ReadLine());
         int index = binary.Search(array, search);
+        if (index is -1)
+        {
+            Console.WriteLine("Данного элемента не найдено в перечне");
+            return;
+        }
         Console.WriteLine($"Индекс: {index}, для числа {search}");
     }
 }

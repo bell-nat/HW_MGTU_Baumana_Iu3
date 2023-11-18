@@ -9,12 +9,14 @@ public class Binary
 
         if (value < x)
         {
+            if (centre is 0) { return -1; }
             index += centre;
             return Search(array.GetRange(centre, array.Count - centre), x, index);
         }
 
         if (value > x)
         {
+            if (centre is 0) { return -1; }
             return Search(array.GetRange(0, centre), x, index);
         }
 

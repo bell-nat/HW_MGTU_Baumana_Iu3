@@ -26,6 +26,7 @@ while (true)
         8 => new HW_MGTU_Baumana_Iu3.DamerauLevenshteinDistance.Handler(),
         9 => new HW_MGTU_Baumana_Iu3.Dijkstra.Handler(),
         10 => new HW_MGTU_Baumana_Iu3.SearchInFiles.Handler(),
+        _ => throw new Exception("Нет такой задачи")
     };
     handler.Start();
     Console.WriteLine("Для выхода нажмите Esc, для продолжения любую клавишу");
